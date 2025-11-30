@@ -4,7 +4,7 @@ import string
 import argparse
 import json
 
-DEFAULT_CHARS = string.ascii_lowercase + string.ascii_uppercase + string.digits + '@._-' 
+DEFAULT_CHARS = string.ascii_lowercase + string.ascii_uppercase + string.digits + '@._-'
 
 def check_condition(url, prefix, postfix, sleep_time, payload):
     full_url = f"{url}?id=1{prefix}{payload}{postfix}"
@@ -103,4 +103,5 @@ if __name__ == "__main__":
     }
     
     
+
     print(json.dumps(output_data, indent=4))
